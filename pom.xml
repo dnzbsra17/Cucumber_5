@@ -93,12 +93,32 @@
             <version>8.0.18</version>
         </dependency>
 
-
-
-
-
-
     </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M1</version>
+                <configuration>
+
+   <!--                 <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles> -->
+
+                    <includes>
+
+                        <include>**/_04_TestRunneSmoke.java</include>
+
+
+                    </includes>
+
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>
