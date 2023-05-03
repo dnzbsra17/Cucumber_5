@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
         tags = "@SmokeTest", // tüm yazılan testler içerisinde smoke test olanları çalıştır demek
         features = {"src/test/java/FeatureFiles"},
         glue = {"StepDefinitions"},
-        plugin= {"html:target/site/cucumber-pretty.html"}
+        plugin= {"json:target/cucumber/cucumber.json"}
 
 
 )
